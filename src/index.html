@@ -29,17 +29,16 @@
 var your_key = config.accessToken;
 var map = L.map('mapid').setView([0, 0], 2);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox.streets',
-      accessToken: your_key,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: your_key,
 }).addTo(map);
 
-// Pathfinding
-var curve1 = L.pathCurve([0.5, 0], [-37, -37]);
-var curve2 = L.pathCurve([0.5, 0], [-37, 37]);
-curve1.addTo(map);
-curve2.addTo(map);
+// EXAMPLES
+var curve1 = L.pathCurve([0.5, 0], [-37, -37]).addTo(map);
+var curve2 = L.pathCurve([0.5, 0], [-37, 37]).addTo(map);
+
 
 </script>
 </html>
