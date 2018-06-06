@@ -16,3 +16,9 @@ var path = L.route(source, destination);
 // Add to map
 curve.addTo(map);
 ```
+
+## Example
+
+Route drawn for (-5, 67) => (58, -27):
+
+![route example](/img/route.png)
