@@ -72,3 +72,8 @@ function getCurve(start, end){
 L.pathCurve = function(start,end){
   return new getCurve(start, end);
 }
+
+
+L.route = function(start, end){
+  return new getRoute(start, end);
+}
